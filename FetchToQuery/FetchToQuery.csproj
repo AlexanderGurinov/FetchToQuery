@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fetch.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SqlKata" Version="1.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fetch.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
